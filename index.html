@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="css/pagination.css"/>
+<link rel="stylesheet" type="text/css" href="css/icons.css"/>
+<script type="text/javascript" src="https://code.jquery.com/jquery-1.12.2.min.js"></script>
+<script type="text/javascript" src="js/pagination.js"></script>
+<title>Simple Pagination JS</title>
+</head>
+<body>
+<div id="main">
+    This Is Simple Pagination Example<br>
+    <fieldset style="display: inline-block;"><legend>Code: Using data-pages attribute</legend>
+<pre>
+&lt;div id="pagination" data-pages='{"page":1,"pages":10,"linkscount":3}'&gt;&lt;/div&gt;
+&lt;button onclick='$("#pagination").paginate();'&gt;show Pagination&lt;/button&gt;
+</pre>
+    </fieldset>
+    <div id="pagination" data-pages='{"page":1,"pages":10,"linkscount":3}' style="text-align: center">here goes pagination</div>
+    <button onclick='$("#pagination").paginate();'>show Pagination</button>
+    <br><br><br>
+    <fieldset style="display: inline-block;"><legend>Code: Using parameters passed(linkscount not available)</legend>
+<pre>
+&lt;div id="pagination_1" &gt;&lt;/div&gt;
+&lt;button onclick='$("#pagination").paginate(1, 10);'&gt;show Pagination&lt;/button&gt;
+</pre>
+    </fieldset>
+    <div id="pagination_1" style="text-align: center">here goes pagination</div>
+    <button onclick='$("#pagination_1").paginate(1, 10);'>show Pagination</button>
+    <br><br><br>
+    <fieldset style="display: inline-block;"><legend>Code: Using Object parameter (page and pages properties are required)</legend>
+<pre>
+&lt;div id="pagination_2" &gt;&lt;/div&gt;
+&lt;button onclick='$("#pagination_2").paginate({page:1, pages:10, linkscount: 3});'&gt;show Pagination&lt;/button&gt;
+</pre>
+    </fieldset>
+    <div id="pagination_2" style="text-align: center">here goes pagination</div>
+    <button onclick='$("#pagination_2").paginate({page:1, pages:10, linkscount: 3});'>show Pagination</button>
+    
+</div>
+</body>
+</html>

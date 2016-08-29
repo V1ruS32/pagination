@@ -1,0 +1,23 @@
+.Sp-pagination {
+    text-align:center;
+    padding:10px;
+}
+.Sp-pagination .page_link{
+    display:inline-block;
+    border:1px solid #e0e0e0;
+    padding:4px 5px 4px 5px;
+    font-size:12px;
+    height:15px;
+    vertical-align:middle;
+    min-width: 20px;
+    margin : 3px;
+    cursor: pointer;
+}
+.Sp-pagination .page_link.disable-nav{
+	cursor:default;
+	opacity:0.8;
+}
+.Sp-pagination .page-page{
+	padding-top:7px;
+	padding-bottom:1px
+}
